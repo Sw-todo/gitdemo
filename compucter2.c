@@ -1,4 +1,4 @@
-'''
+/*
 #    COPYRIGHT SW
 #    Copyright (c) 2020
 #    All rights reserved
@@ -8,10 +8,10 @@
 #    @file              :/home/Sw/py_study/git/compucter2.c
 #    @creation_date     :2020/03/25 09:32
 #    @modification_date :2020/03/25 09:32
-'''
+*/
 /*solve the problem of polynomial addition*/
 #include<stdio.h>
-#include<sydlib.h>
+#include<stdlib.h>
 #define SIZE sizeof(ND)
 
 struct node{
