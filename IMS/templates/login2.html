@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/css/solid.css">
+    <link rel="stylesheet" href="../static/css/all.css">
+    <link rel="stylesheet" href="../static/css/login2.css">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="input_box">
+            <div class="input-text">
+                <span class="fa fa-user"></span>
+                <input type="text" placeholder="用户名">
+            </div>
+            <div class="input-text" id="password_input">
+                <span class="fa fa-keyboard"></span>
+                <input type="password" placeholder="密码" id="password">
+                <span class="fa fa-eye-slash" id="eye"></span>
+            </div>
+            <div class="input-btn">
+                登录
+            </div>
+            <div class="sign-up">
+                还没账户？<a href="#" class="href">立即注册</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<!--Footer-->
+<footer>
+      <h6>Copy right@Sw Myaron xunzhenhangming</h6>
+</footer>
+
+
+<script>
+
+    var password = document.getElementById('password');
+    var anniu = document.getElementById('eye');
+
+
+    anniu.addEventListener('click',function(){
+        if(password.type==='password'){
+            password.setAttribute('type','text'); anniu.setAttribute('class','fa fa-eye');
+        }
+        else{
+            password.setAttribute('type','password'); anniu.setAttribute('class','fa fa-eye-slash');
+        }
+    })
+</script>
+
+</html>
